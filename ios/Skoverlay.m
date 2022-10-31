@@ -2,8 +2,8 @@
 
 @interface RCT_EXTERN_MODULE(Skoverlay, NSObject)
 
-RCT_EXTERN_METHOD(showOverlay:(float)a withB:(float)b
-                 withResolver:(RCTPromiseResolveBlock)resolve
+RCT_EXTERN_METHOD(showOverlay:(string)a withB:(string)b withC:(string)c
+                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 
 + (BOOL)requiresMainQueueSetup
