@@ -1,5 +1,7 @@
 # react-native-skoverlay
+
 Expose SKOverlay for react-native
+
 ## Installation
 
 ```sh
@@ -9,11 +11,11 @@ npm install react-native-skoverlay
 ## Usage
 
 ```js
-import { multiply } from "react-native-skoverlay";
+import { showOverlay } from 'react-native-skoverlay';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await showOverlay(3, 7);
 ```
 
 ## Contributing
