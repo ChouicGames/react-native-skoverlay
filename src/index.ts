@@ -4,7 +4,7 @@ const Skoverlay = NativeModules.Skoverlay;
 
 export function showOverlay(
   identifier: string,
-  position: string,
+  position: 'bottomRaised' | 'bottom',
   campaignToken: string
 ) {
   if (Platform.OS === 'android') return;
