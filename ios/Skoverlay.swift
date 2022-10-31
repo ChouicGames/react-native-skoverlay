@@ -15,7 +15,7 @@ class Skoverlay: NSObject {
                 .first
             
             let config = SKOverlay.AppConfiguration(appIdentifier: identifier, position: position == "bottomRaised" ? .bottomRaised : .bottom)
-//            config.campaignToken = campaignToken
+            config.campaignToken = campaignToken
             let overlay = SKOverlay(configuration: config)
             overlay.present(in: scene as! UIWindowScene)
         })
