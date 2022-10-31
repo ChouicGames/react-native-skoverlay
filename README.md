@@ -1,11 +1,13 @@
 # react-native-skoverlay
 
-Expose SKOverlay for react-native
+Expose SKOverlay (iOS only) for react-native
+Do nothing on android
+Inspired from : https://github.com/stevenselcuk/react-native-app-promoter
 
 ## Installation
 
 ```sh
-npm install react-native-skoverlay
+yarn add react-native-skoverlay
 ```
 
 ## Usage
@@ -15,7 +17,7 @@ import { showOverlay } from 'react-native-skoverlay';
 
 // ...
 
-const result = await showOverlay(3, 7);
+showOverlay(1234, 'bottomRaised', 'mygreatpromotion');
 ```
 
 ## Contributing
